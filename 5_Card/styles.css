@@ -1,0 +1,56 @@
+body{
+    background-color: black;
+}
+.main {
+    display: flex;
+    justify-content:space-around;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    height: 200px;
+    width: 450px;
+
+    margin: 50px auto; /* vertical horizontal*/
+    padding: 20px;
+
+    border-radius: 100px;
+    border: 6px double rgb(0, 0, 0);
+
+    box-shadow: /*Diferentes efectos combinados*/
+    inset 0px 6px 7px rgba(246, 199, 80, 0.9),
+    0px 6px 4px rgb(245, 228, 78),
+    0px 12px 10px rgb(19, 152, 235),
+    0px 12px 20px rgb(248, 0, 0);
+    
+}
+.text1{
+    border: 2px solid white;
+    padding: 10px;
+    border-radius: 50px;
+    border-bottom:7px solid white;
+
+}
+
+.img1{
+    width: 200px;
+    border-radius: 100px;
+    border:3px solid white;
+    animation: slide 3s infinite;
+
+}
+@keyframes slide {
+    0% {
+      transform: translateX(0);
+    }
+    50% {
+      transform: translateX(25px);
+    }
+    100% {
+      transform: translateX(0);
+    }
+}
+
+.miLetra{
+    font-style: italic;
+    color: black;
+    font-family: 'Times New Roman', Times, serif;
+}
